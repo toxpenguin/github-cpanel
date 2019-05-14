@@ -1,0 +1,6 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/websites/github.websitesaya.net
+ - /bin/rsync -Paz * $DEPLOYPATH --delete
+
